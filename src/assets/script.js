@@ -76,7 +76,6 @@ emptyCart = () => {
   products.forEach(product => {
     product.quantity = 0;
   });
-  console.log(cart);
 }
 
 pay = (amount) => {
