@@ -78,8 +78,10 @@ emptyCart = () => {
   });
 }
 
+let totalPaid = 0;
 pay = (amount) => {
-  return amount - cartTotal();
+  totalPaid += amount;
+  return totalPaid - cartTotal();
 }
 
 module.exports = {
